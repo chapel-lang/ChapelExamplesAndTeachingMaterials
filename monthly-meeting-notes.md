@@ -43,3 +43,16 @@
 
 
 ## Wednesday 7pm pacific / Thursday 9am GMT+10 (Australia and Asia-friendly time)
+
+### Attendees
+
+  * Josh M.
+  * Michelle S.
+
+### Key discussion points
+
+  * Need to get Chapel in front of more undergraduates, potentially this group could design an intro to CS course based on Chapel?
+  * A 3-hour workshop Josh developed and taught, https://github.com/ANU-HPC/chapelDeviceAgnostic
+  * reduce the barrier to entry for someone who just wants to try out Chapel
+    * programming models that have gone viral have focused on that initial issue, how to build and install
+    * examples are spark and python, if it is easy to learn a little, then folks will stick with it due to the sunk cost fallacy
