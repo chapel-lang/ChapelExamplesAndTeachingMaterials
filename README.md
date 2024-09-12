@@ -4,7 +4,7 @@ A repository to gather copies of teaching materials and links to example Chapel 
 Here is an initial list of existing Chapel materials that people have developed.  We encourage pull requests to edit or add to this list.
 
 | Content | Links to Materials                                                                                  | Contributor         | Institution              | Contributor Website                                              |
-|-----------------------------------------------------------------------------------------------------|---------------------|--------------------------|------------------------------------------------------------------|
+|-------------------------------|-----------------------------------------------------------------------------------------------------|---------------------|--------------------------|------------------------------------------------------------------|
 | Parallel Programming in Chapel | [https://wgpages.netlify.app/chapel](https://wgpages.netlify.app/chapel)                             | Alex Razoumov       | Simon Fraser University   |                                                                  |
 | HPC Carpentry for Chapel | [https://www.hpc-carpentry.org/hpc-chapel](https://www.hpc-carpentry.org/hpc-chapel) | Alex Rzoumov | | |
 | | [https://w3.cs.jmu.edu/lam2mo/cs470_2017_01/calendar.html](https://w3.cs.jmu.edu/lam2mo/cs470_2017_01/calendar.html) | Mike Lam            | James Madison University | [https://w3.cs.jmu.edu/lam2mo/](https://w3.cs.jmu.edu/lam2mo/)    |
