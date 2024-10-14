@@ -1,4 +1,55 @@
-# Wednesday September 11th
+# Wednesday October 10th, 2024
+
+## agenda
+  * announcements: put Alex slides in GitHub repository
+  * Nelson talking about numerical codes he has written
+  * Michelle will be teaching Chapel for 5 weeks of a 
+    junior-level PL course in the Spring and welcomes any 
+    suggestions
+  * what to discuss next month?
+
+## Wednesday at 9am pacific / 4pm GMT (Europe-friendly time)
+
+### Attendees
+
+  * Tyler S
+  * Dave W
+  * Michael F
+  * Bonnie H
+  * Nelson
+  * Paul S
+  * Yonghong Y
+  * Wu F
+  * Michelle S
+
+
+### Key discussion points
+  * Next month on Nov 13: Tyler S is going to share some of
+    his experiences teaching Chapel
+
+  * HPC Carpentry Chapel website is now in the new Carpentries 
+    Workbench format ~[https://www.hpc-carpentry.org/hpc-chapel]
+    (https://www.hpc-carpentry.org/hpc-chapel)~, Introduction to 
+    High-Performance Computing in Chapel: Summary and Setup
+
+  * Nelson presented on how he uses Chapel in his graduate Numerical Methods course
+    * https://nldias.github.io/teaching.html, in Portuguese
+    * Runge Kutta procedure, kinematic wave, diffusion, and 
+      Laplace/Poisson, like numerical recipes
+    * aims to cover a simple version of Navier Stokes
+
+  * Nelson was asking for a central repository for contributions 
+    for common operations
+      * Paul S gave a plus 1 to this
+      * specific gaps were mean and standard deviation
+      * Michael suggested Mason is a possible repository
+
+
+## Wednesday 7pm pacific / Thursday 9am GMT+10 (Australia and Asia-friendly time)
+
+The later one was canceled.
+
+# Wednesday September 11th, 2024
 
 ## agenda
   * brief introductions: name, institution
@@ -35,8 +86,8 @@
 
   * Proposal is to have 3 tracks in HPC Carpentries (Alex notes)
     1. heat propagation solver for engineers and physicists
-    2. Julia set for people who aren't interested in solving PDEs, still leading to distributed domains 
-    3. third good example problem to play with task synchronization without distributed domains/arrays - would like to keep the current examples too - include writing into a PNG (as opposed to NetCDF) - some parallel I/O (had a webinar example with HDF5)
+    2. Julia set for people who aren't interested in solving PDEs, still leading to distributed domains
+    3. third good example problem to play with task synchronization without distributed domains/arrays- would like to keep the current examples too- include writing into a PNG (as opposed to NetCDF)- some parallel I/O (had a webinar example with HDF5)
 
   * Other suggestions for a good third example problem
     * Wu, ODEs are used to analyze and predict occurrences in epidemiology, physiology, and neural networks
