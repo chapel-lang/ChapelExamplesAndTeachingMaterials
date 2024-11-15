@@ -93,8 +93,8 @@ Canceled for November and December.
     his experiences teaching Chapel
 
   * HPC Carpentry Chapel website is now in the new Carpentries 
-    Workbench format ~[https://www.hpc-carpentry.org/hpc-chapel]
-    (https://www.hpc-carpentry.org/hpc-chapel)~, Introduction to 
+    Workbench format [https://www.hpc-carpentry.org/hpc-chapel]
+    (https://www.hpc-carpentry.org/hpc-chapel), Introduction to 
     High-Performance Computing in Chapel: Summary and Setup
 
   * Nelson presented on how he uses Chapel in his graduate Numerical Methods course
@@ -144,10 +144,10 @@ The later one was canceled.
 
   * Alex links about HPC Carpentry entry
     * current old-format website ~[https://www.hpc-carpentry.org/hpc-chapel](https://www.hpc-carpentry.org/hpc-chapel)~
-    * its repository ~[https://github.com/hpc-carpentry/hpc-chapel](https://github.com/hpc-carpentry/hpc-chapel)~
-    * pull request (converted to the new Carpentries Workbench format) ~[https://github.com/hpc-carpentry/hpc-chapel/pull/23](https://github.com/hpc-carpentry/hpc-chapel/pull/23)~
-    * preview of the new format ~[https://razoumov.github.io/chapel-testing](https://razoumov.github.io/chapel-testing)~
-    * my own Chapel training website ~[https://wgpages.netlify.app/chapel](https://wgpages.netlify.app/chapel)~ with more recent materials, Introduction to High-Performance Computing in Chapel
+    * its repository [https://github.com/hpc-carpentry/hpc-chapel](https://github.com/hpc-carpentry/hpc-chapel)
+    * pull request (converted to the new Carpentries Workbench format) [https://github.com/hpc-carpentry/hpc-chapel/pull/23](https://github.com/hpc-carpentry/hpc-chapel/pull/23)
+    * preview of the new format [https://razoumov.github.io/chapel-testing](https://razoumov.github.io/chapel-testing)
+    * my own Chapel training website [https://wgpages.netlify.app/chapel](https://wgpages.netlify.app/chapel) with more recent materials, Introduction to High-Performance Computing in Chapel
 
   * Proposal is to have 3 tracks in HPC Carpentries (Alex notes)
     1. heat propagation solver for engineers and physicists
@@ -162,7 +162,7 @@ The later one was canceled.
   * People also brought up wanting to include some material about programming GPUs with Chapel.
 
   * Talked about other possible distributions
-    * ~[https://chapel-lang.org/blog/series/navier-stokes-in-chapel/](https://chapel-lang.org/blog/series/navier-stokes-in-chapel/)~ jeremiah's posts that use the Stencil distribution
+    * [https://chapel-lang.org/blog/series/navier-stokes-in-chapel/](https://chapel-lang.org/blog/series/navier-stokes-in-chapel/) jeremiah's posts that use the Stencil distribution
 
 
 ## Wednesday 7pm pacific / Thursday 9am GMT+10 (Australia and Asia-friendly time)
