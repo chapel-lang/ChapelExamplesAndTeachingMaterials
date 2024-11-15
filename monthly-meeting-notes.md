@@ -1,3 +1,68 @@
+# Wednesday November 13th, 2024
+
+## agenda
+Simon Tyler’s colleague Stephen Timcheck will talk about their experiences 
+learning and using Chapel. They will talk about a paper we are working on that 
+uses Chapel for computing digits of pi.
+
+### Attendees
+* Stephen T.
+* Tyler S.
+* Alex R.
+* David WW.
+* Michael F.
+* Nelson L.
+
+### Key discussion points
+
+## Wednesday at 9am pacific / 4pm GMT (Europe-friendly time)
+
+* Stephen has been learning Chapel for six months
+* He is working on a generic cluster system
+* Calculating the digits of Pi
+  * calculating Pi is an emerging benchmark
+  * example of arbitrary precision arithmetic
+  * computing is limited by the amount of memory available
+* using Chudnovsky instead of Gauss-Legendre, since Chudnovsky has divide and conquer parallelism
+* Using Chapel's GMP and BigInteger libraries
+* GMP isn't parallel within a locale
+* Conclusions, copied from Stephen's slides
+  * Chudnovsky's Algorithm produces digitigs of pi faster than Gauss-Legendre
+  * Chapel's parallel structures made leveraging parallelism easy: a simple 3 line code change
+  * The parallel Chudnovsky Algorithm ran up to 5X faster than the serial implementation.
+  * Not presented: Extending to multiple locales within a larger system required a 1 line code change
+
+#### Code snippet shared in chat
+```
+// Block Distribution . . .
+const Dist = Block.createDomain(Space);
+var S:[Dist] owned subproblem?;
+forall i in Dist with (ref S) do {
+  var tmp_s:subproblem = S[i]!;
+  computeBaseSubproblem(tmp_s);
+}
+var step = 1;
+//The number of levels we need to iterate over (tree height) is log2(N)
+for h in 1..log2(N) {
+  //We can parallelize the merging of subproblems per level of the tree
+  forall i in Dist by (step * 2) with (ref S) do {
+  var tmp_s1:subproblem = S[i]!;
+  var tmp_s2:subproblem = S[i + step]!;
+  mergeSubproblems(tmp_s1, tmp_s2);
+  }
+  step = step * 2;
+}
+on Locales[0] {
+  // Finish the calculation of pi using S[0]. . .
+}
+```
+
+
+## Wednesday 7pm pacific / Thursday 9am GMT+10 (Australia and Asia-friendly time)
+
+Canceled for November and December.
+
+
 # Wednesday October 10th, 2024
 
 ## agenda
