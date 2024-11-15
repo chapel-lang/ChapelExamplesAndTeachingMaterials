@@ -5,6 +5,8 @@ Simon Tyler’s colleague Stephen Timcheck will talk about their experiences
 learning and using Chapel. They will talk about a paper we are working on that 
 uses Chapel for computing digits of pi.
 
+## Wednesday at 9am pacific / 4pm GMT (Europe-friendly time)
+
 ### Attendees
 * Stephen T.
 * Tyler S.
@@ -14,8 +16,6 @@ uses Chapel for computing digits of pi.
 * Nelson L.
 
 ### Key discussion points
-
-## Wednesday at 9am pacific / 4pm GMT (Europe-friendly time)
 
 * Stephen has been learning Chapel for six months
 * He is working on a generic cluster system
