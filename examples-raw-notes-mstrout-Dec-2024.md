@@ -38,6 +38,7 @@ relevant GitHub issues
   * Jade example GPU code, is that the same as above?
 
 * [jeremiah-corrado/arkouda-xarray: Interface for using arkouda with xarray](https://github.com/jeremiah-corrado/arkouda-xarray)
+  * https://github.com/jeremiah-corrado/arkouda-xarray-seasonal-avgs-example
 
 * [arkouda-contrib/arkouda_viz at main · Bears-R-Us/arkouda-contrib](https://github.com/Bears-R-Us/arkouda-contrib/tree/main/arkouda_viz)
 
