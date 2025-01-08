@@ -1,3 +1,57 @@
+
+# Wednesday January 8, 2025
+
+
+## agenda
+We discussed the outline of what Michelle S plans to cover this semester related to Chapel, https://docs.google.com/document/d/1RoUWNRjQURFagg5DVxT4DMnDFVgzLaB0SU_YhOZQdHs/edit?usp=sharing
+
+## Wednesday at 9am pacific / 4pm GMT (Europe-friendly time)
+
+### Attendees
+* Alex R.
+* David W.
+* Michael F.
+* Brandon N.
+* Maryam D.
+* Wu F.
+* Yonghong Y.
+* Michelle S.
+
+### Key discussion points
+
+* Based on some of my notes and from the more thorough notes Brandon took, here is a summary of what we talked about.
+
+* Basic structure of course
+  - how do we evaluate languages as tools to solve problems?
+  - emphasizing the reason we use languages is to solve problems/write applications. what features make them especially handy to solve certain problems?
+  - example: SML has pattern matching, so students will do lexing/parsing assignment
+  - example: prolog space repetition system, or optimization problem
+  - thinking about what does chapel do especially well
+
+* There were a lot of great suggestions
+  * in Lecture 1 on Chapel
+    * Michael, it is important for students to see parallelism improving performance.
+    * Dave might be good to have them do at least one performance experiment.
+  * more generally related to performance cost models
+    * Michael indicated there are a number of things that cause distributed overhead
+    * Dave W, suggested talking about the constant of the performance versus asymptotic analysis and performance of algorithms
+  * in Lecture 6 where I indicated I might do safety and memory management
+    * Dave W bringing up safe C++ proposal, Stroustrup’s promises proposal, some things needed in libraries and when running concurrently
+      * Could pair with futures, actors, etc.  deadlock free for example may not compose, when might the system fail
+    * Michael comments, Blog post about memory safety is coming in theory
+  * 3 and 4 of Chapel Basics Slides
+    - n-body computation
+      - Michael worried about the parallelizability of this, given that astrophysics uses FFT
+      - could parallelize over different configurations (small changes to starting conditions)
+
+- Action items for Michelle
+  - talk offline with Michael about whether Chapel is installed at UofA
+  - contact UofA HPC center
+  - see if someone on the team is willing to demo CommDiagnostics, Arkouda, or the runtime for like 20 minutes
+    - Alex wants to hear about CommDiagnostics and Arkouda
+    - Maryam would like to hear about the Chapel compiler and runtime, requested this in the past as well
+
+
 # Wednesday November 13th, 2024
 
 ## agenda
@@ -11,7 +65,7 @@ uses Chapel for computing digits of pi.
 * Stephen T.
 * Tyler S.
 * Alex R.
-* David WW.
+* David W.
 * Michael F.
 * Nelson L.
 
