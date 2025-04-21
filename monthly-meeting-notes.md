@@ -1,3 +1,39 @@
+# Wednesday April 8, 2025
+
+
+## agenda
+We discussed the outline of what Michelle S plans to cover this semester related to Chapel, https://docs.google.com/document/d/1RoUWNRjQURFagg5DVxT4DMnDFVgzLaB0SU_YhOZQdHs/edit?usp=sharing
+
+## Wednesday at 9am pacific / 4pm GMT
+
+### Attendees
+* Alex R.
+* Michael F.
+* Paul S.
+* Sosuke H.
+* Kenjiro
+* Nelson
+* Michelle S.
+
+### Key discussion points
+
+* Alex has a class coming up end of May and then a conference after that, 
+  will be doing some comparing of programming languages
+
+* talked about a Chapel assignment that does image analysis, [https://github.com/UofA-CSc-372-Spring-2025/CSc372Spring2025-CourseMaterials/blob/main/SmallAssignmentWriteups/sa7-chapel.md](https://github.com/UofA-CSc-372-Spring-2025/CSc372Spring2025-CourseMaterials/blob/main/SmallAssignmentWriteups/sa7-chapel.md)
+  * Alex tried to scale the image library 32k^2 image it doesn’t work, 
+    no errors doesn’t output anything, 16K^2 worked great
+
+* Info about Image module in Chapel
+  * Documentation for the Chapel Image package: [https://chapel-lang.org/docs/main/modules/packages/Image.html](https://chapel-lang.org/docs/main/modules/packages/Image.html)
+  * Real world example in Chai: [https://github.com/Iainmon/ChAI/blob/b4df21b3ad4c45ce445842174f5c7270d35819bb/lib/Utilities.chpl](https://github.com/Iainmon/ChAI/blob/b4df21b3ad4c45ce445842174f5c7270d35819bb/lib/Utilities.chpl)
+  * Figuring out an image type, [https://github.com/Iainmon/ChAI/blob/b4df21b3ad4c45ce445842174f5c7270d35819bb/lib/Utilities.chpl\#L321](https://github.com/Iainmon/ChAI/blob/b4df21b3ad4c45ce445842174f5c7270d35819bb/lib/Utilities.chpl#L321)
+  * Demo of using Image package: [https://www.youtube.com/watch?v=5x3Lsn-yOD0](https://www.youtube.com/watch?v=5x3Lsn-yOD0)
+  * Chapel con 24 tutorial session with the Image module: [https://youtu.be/N2LWN3A9rck?si=rC6KOuXgrjJB6p9h&t=765](https://youtu.be/N2LWN3A9rck?si=rC6KOuXgrjJB6p9h&t=765)
+
+* Michael talking about the LSB sorting code
+  * [https://github.com/mppf/distributed-lsb](https://github.com/mppf/distributed-lsb)
+  * looks like a process per socket does perform better
 
 # Wednesday January 8, 2025
 
