@@ -1,3 +1,35 @@
+# Wednesday May 14, 2025
+
+## agenda
+Wednesday May 14th at 9am pacific time, I will be presenting a 25-minute talk titled “MARBLChapel: Fortran-Chapel Interoperability in an Ocean Simulation”.
+
+### Attendees
+* Alex R.
+* Michael F.
+* Paul S.
+* Dave W.
+* Michelle S.
+
+### Key discussion points
+
+* Alex is teaching a course starting tomorrow and next week about chapel
+  * rewrote the course, mostly data parallelism, very little task parallelism
+  * part II is GPUs
+  * measuring performance in class
+  * next month Alex can share it briefly 5 minutes
+
+* Dave had a question, are there libraries for map reduce?
+  * Michael, a forall loop is a map, for a reduce can use a reduce intent or a reduce statement
+  * Dave, can you hand a function to something for a mapping
+  * Michael, needed a custom reduction recently, instead he had a custom type and overload + on it, easiest way to do your own reduction in practice
+  * Dave would do map reduce in a parallel programming course
+
+* Michelle gave a talk
+
+* Dave asking about memory safety
+  * Michael, ~[https://chapel-lang.org/blog/posts/memory-safety/](https://chapel-lang.org/blog/posts/memory-safety/)~
+  * Dave is talking about govt and safety, conflating safety with memory safety, but there are a lot of integer overflow
+
 # Wednesday April 8, 2025
 
 
