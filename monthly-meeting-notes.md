@@ -27,7 +27,7 @@ Wednesday May 14th at 9am pacific time, I will be presenting a 25-minute talk ti
 * Michelle gave a talk
 
 * Dave asking about memory safety
-  * Michael, ~[https://chapel-lang.org/blog/posts/memory-safety/](https://chapel-lang.org/blog/posts/memory-safety/)~
+  * Michael, [https://chapel-lang.org/blog/posts/memory-safety/](https://chapel-lang.org/blog/posts/memory-safety/)
   * Dave is talking about govt and safety, conflating safety with memory safety, but there are a lot of integer overflow
 
 # Wednesday April 8, 2025
