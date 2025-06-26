@@ -1,12 +1,29 @@
 # ChapelExamplesAndTeachingMaterials
 A repository to gather copies of teaching materials and links to example Chapel programs and other materials.
 
+To find some Chapel code examples see [https://chapel-lang.org/examples/](https://chapel-lang.org/examples/).
+Here are some other examples:
+* [https://github.com/mppf/distributed-lsb](https://github.com/mppf/distributed-lsb) A parallel radix sort implemented in Chapel, MPI, Lamellar+Rust, OpenSHMEM, and others.
+* from various Chapel tutorials
+  * https://github.com/DanilaFe/chapel-october-2023-tutorial
+  * https://github.com/mstrout/ChapelForPythonProgrammersFeb2023
+  * https://github.com/mstrout/ChapelForPythonProgrammersMay2023
+  * https://bitbucket.org/berkeleylab/upcxx/wiki/events/CUF23
+* look on GitHub for other repositories that use Chapel or fall under the Chapel topic, https://github.com/search?q=topic%3Achapel-language&type=repositories
+* [jeremiah-corrado/arkouda-xarray: Interface for using arkouda with xarray](https://github.com/jeremiah-corrado/arkouda-xarray)
+  * https://github.com/jeremiah-corrado/arkouda-xarray-seasonal-avgs-example
+* Monte Carlo example
+  * https://github.com/e-kayrakli/mc321.chpl/tree/main
+  * https://github.com/osimlab/MC321_Hui
+
 Here is an initial list of existing Chapel materials that people have developed.  We encourage pull requests to edit or add to this list.
 
 | Content | Links to Materials                                                                                  | Contributor         | Institution              | Contributor Website                                              |
 |-------------------------------|-----------------------------------------------------------------------------------------------------|---------------------|--------------------------|------------------------------------------------------------------|
-| Parallel Programming in Chapel | [https://wgpages.netlify.app/chapel](https://wgpages.netlify.app/chapel)                             | Alex Razoumov       | Simon Fraser University   |                                                                  |
-| HPC Carpentry for Chapel | [https://www.hpc-carpentry.org/hpc-chapel](https://www.hpc-carpentry.org/hpc-chapel) | Alex Rzoumov | | |
+| Parallel Programming in Chapel | [https://wgpages.netlify.app/chapel](https://wgpages.netlify.app/chapel)                             | Alex Razoumov       | Simon Fraser University   |                                                                 |
+| Chapel in a Comparative Programming Languages Course | [https://github.com/UofA-CSc-372-Spring-2025/CSc372Spring2025-CourseMaterials/blob/main/syllabus-csc372-Spring2025.md](https://github.com/UofA-CSc-372-Spring-2025/CSc372Spring2025-CourseMaterials/blob/main/syllabus-csc372-Spring2025.md), [Slides](https://github.com/UofA-CSc-372-Spring-2025/CSc372Spring2025-CourseMaterials/tree/main/ClassSlides), [Programming Assignment](https://github.com/UofA-CSc-372-Spring-2025/CSc372Spring2025-CourseMaterials/blob/main/SmallAssignmentWriteups/sa7-chapel.md) | Michelle Strout | HPE and University of Arizona | |
+| HPC Carpentry for Chapel | [https://www.hpc-carpentry.org/hpc-chapel](https://www.hpc-carpentry.org/hpc-chapel) | Alex Razoumov | | |
+| Image Processing and kd trees and kmeans clustering ... | [http://primachvis.com/pdf/chapel_by_ex.pdf](http://primachvis.com/pdf/chapel_by_ex.pdf) | Greg Kreider | Primordial Machine Vision Systems |
 | | [https://w3.cs.jmu.edu/lam2mo/cs470_2017_01/calendar.html](https://w3.cs.jmu.edu/lam2mo/cs470_2017_01/calendar.html) | Mike Lam            | James Madison University | [https://w3.cs.jmu.edu/lam2mo/](https://w3.cs.jmu.edu/lam2mo/)    |
 | | [https://redirect.cs.umbc.edu/~tsimo1/CMSC483/cs220/code.html](https://redirect.cs.umbc.edu/~tsimo1/CMSC483/cs220/code.html) | Tyler Simon         | University of Maryland   | [https://redirect.cs.umbc.edu/~tsimo1/](https://redirect.cs.umbc.edu/~tsimo1/) |
 | | [https://passlab.github.io/CSCE569/notes/lecture_ChapelOverview.pdf](https://passlab.github.io/CSCE569/notes/lecture_ChapelOverview.pdf) | Yonghong Yan        | UNC Charlotte            | [https://passlab.github.io/yanyh/](https://passlab.github.io/yanyh/) |
