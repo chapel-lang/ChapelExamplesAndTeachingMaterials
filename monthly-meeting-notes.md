@@ -1,3 +1,14 @@
+# Wednesday July 9, 2025
+
+## Agenda
+
+Alex R. will be presenting a 15-minute talk covering his recent Chapel course (combining data-parallel
+programming and GPUs) that was taught twice (online in May and at the SFU Research Computing summer school in
+June).
+
+### Attendees
+### Key discussion points
+
 # Wednesday May 14, 2025
 
 ## agenda
