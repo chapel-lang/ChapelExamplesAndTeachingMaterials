@@ -1,13 +1,111 @@
++++
+title = "Test"
+slug = "test"
++++
+
 # Wednesday July 9, 2025
 
 ## Agenda
 
-Alex R. will be presenting a 15-minute talk covering his recent Chapel course (combining data-parallel
-programming and GPUs) that was taught twice (online in May and at the SFU Research Computing summer school in
-June).
-
 ### Attendees
+
+* Michael Ferguson
+* Michelle Strout
+* Brandon Neth
+* Kenjiro Taura
+* Nelson da Costa
+* Alex Razoumov
+* David Wonnacott
+
 ### Key discussion points
+
+Brandon N. (General Chair of ChapelCon'25) made a short announcement about submitting to [ChapelCon'25](https://chapel-lang.org/chapelcon25).
+- specifically interested in hearing from educators using Chapel in the classroom
+- submission deadline July-25
+- can specify one of: talk / demo / poster / extended abstract
+- length anywhere from 5 to 30 mins
+
+Michael F. talked through the new [Optimization Guide](https://chapel-lang.org/docs/technotes/optimization.html).
+- also found under https://chapel-lang.org | Docs | Technical Notes, look for "Optimizing Performance of Chapel Programs"
+- justification: here is what we have today in the compiler, here is how you can write a good code with
+  today's bottlenecks
+- Nelson: how about single-locale performance optimization? e.g. when summing elements of an array with a
+  recursive procedure => can slice an array, can go through the binary tree, but end up with tons of slicing,
+  any suggestions to optimize?
+- Michael: this document mentions overhead of slices being an issue, but emphasise distributed arrays; it is
+  an issue in local memory as well, there is some relevant info in the document for non-distributed cases;
+  similar problems in the Standard Library for sorting; would be appealing to do with slices, but too much
+  overhead; it is possible to reduce slice overheads in the future, but they are definitely here today; see
+  the paragraph starting with "One common scenario is that data ..." -- helps in some cases
+- David asked about the slice overhead order
+- question for the compiler optimization: when wide pointers can be figured out not being remote
+- Michael: yes, already doing a number of optimizations for local blocks
+
+Alex R. talked about teaching the revamped Chapel course
+- combining data-parallel programming and GPUs , omitting task parallelism
+- recently taught it twice: online in May (4 hours, 1 student) and at the SFU Research Computing summer school
+  in June (3 hours, 18 students)
+- work for the HPC centre; teach ~25 full-day courses on a rotating basis
+  - hard to teach Chapel more than ~2X a year, with everything else in the curriculum
+  - very few students interested in parallel programming from scratch
+- currently teach parallel programming in Chapel, Julia, Python (separate courses)
+- all taught to absolute beginners assuming zero programming experience
+- Chapel course is preceded by a full-day introduction to HPC: get comfortable with Slurm, talk about shared-
+  and distributed-memory programming, briefly go over several parallel programming frameworks including MPI
+  and OpenMP
+- Part 1 (data parallelism) https://wgpages.netlify.app/chapel
+- Part 2 (GPU programming) https://wgpages.netlify.app/chapel-gpu
+- ideally 2 full days to cover everything
+- consider two problems: embarrassingly parallel (Julia set) and tightly coupled (heat diffusion)
+- small training cluster: rely on `sbatch` for all demos and exercises
+- QUESTION single-locale data parallelism: any other way to probe the number of tasks?
+- with tightly-coupled: only get speedup at sufficiently large problem sizes => takes too long to compute to convergence
+  + slow interconnect
+  - solutions:
+  1. only consider a small number of steps (not iterate until convergence)
+  2. replace diffusion with an interesting advection problem
+  3. StencilDist? Michael: no need to do copy aggregation with StencilDist (it does it automatically)
+  4. any other tightly-coupled problems?
+  5. Michelle: consider running a distributed tightly-coupled parallel problem on a single node, with locale
+     over-subscription => much faster communication
+  6. Michael: could do some optimization in the parallel version with slices
+- first taught the GPU part last December: provided both a vGPU (and GPU-enables Chapel) and CPU-as-device
+  builds => led to quite a bit of confusion
+- in May: prepared only CPU-as-device ... would have been nice to show GPU acceleration!
+- in June: tried (and failed) to allocate vGPUs, but had no time to show any GPU demos
+- would like to implement the same tightly-coupled problem (as in Part 1) on a GPU
+- QUESTION outstanding: plot Julia set on a GPU; now getting a runtime "Error calling CUDA function: an
+  illegal memory access was encountered (Code: 700)"; bug in the compiler?
+
+**Question**: do these two snippets always lead to the same behaviour?
+```chpl
+forall loc in Locales do
+  on loc do
+	...
+```
+```chpl
+coforall loc in Locales do
+  on loc do
+	...
+```
+- Michael: ideally, these two should work the same, but this is *not* what happens now. Let's say we run this
+  on 1000 nodes with 16 cores each. Right now `forall` will probe the amount of parallelism on the first node,
+  detecting 16 available cores, and will break the problem into 16 parallel tasks. Each task will go in serial
+  through its own ~1/16th subset of nodes doing some work there, but the nodes will not be utilized all in
+  parallel, i.e. we'll get only 16-way parallelism across nodes. The right solution is to use `coforall`.
+
+**Question**: there is parallel file read example on the front page of https://chapel-lang.org -- can it be
+demonstrated that read really happens in parallel for a large file, and how large would that file need to be?
+can we determine the number of tasks at runtime?
+- Brandon: it'll use whatever the max task parallelism on the node is
+- Michael: profiling tools might be able to show the number of tasks. If using `forall`, can use a private
+  variable to printout messages from individual tasks or count tasks.
+
+### Next month
+
+- collect topic ideas, suggestions for speakers
+- Michelle: Engin might join us; also Ray Tall (?) is planning to teach parallel Chapel in a course, might
+  want to share; or we could do a Q&A session on various topics, similar to today's last two questions
 
 # Wednesday May 14, 2025
 
