@@ -3,6 +3,38 @@ title = "Test"
 slug = "test"
 +++
 
+
+
+<!-- this is a template: please do not delete -->
+<!-- ### Attendees -->
+<!-- ### Agenda -->
+<!-- ### Key discussion points -->
+<!-- ### Next month -->
+<!-- Wishlist of future topics for these meetups. -->
+
+
+
+
+# Wednesday August 13, 2025
+
+### Attendees
+### Agenda
+David Wonnacott will give a 20-minute presentation on "Tools for Teaching Intro CS / Programming".
+- while not Chapel-specific, David will cover the tools he currently uses to teach CS1/CS2, and possible ways
+  to "Chapel-ize" them
+- Luca Ferranti will talk briefly on his work to add Chapel to https://exercism.org
+- other discussion points, time permitting (we could discuss parallel I/O in teaching, the current state of
+  linear algebra in Chapel, I could show my recent implementation of a 2D advection solver to generate an
+  ensemble of solutions to train a generative AI model in an upcoming course)
+### Key discussion points
+### Next month
+Wishlist of future topics for these meetups.
+
+
+
+
+
+
 # Wednesday July 9, 2025
 
 ## Agenda
