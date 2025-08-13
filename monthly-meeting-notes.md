@@ -1,10 +1,3 @@
-+++
-title = "Test"
-slug = "test"
-+++
-
-
-
 <!-- this is a template: please do not delete -->
 <!-- ### Attendees -->
 <!-- ### Agenda -->
