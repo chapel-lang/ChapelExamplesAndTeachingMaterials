@@ -5,23 +5,99 @@
 <!-- ### Next month -->
 <!-- Wishlist of future topics for these meetups. -->
 
-
-
-
 # Wednesday August 13, 2025
 
 ### Attendees
+
+* David Wonnacott
+* Engin Kayraklioglu
+* Kenjiro Taura
+* Alex Razoumov
+* arezail
+* Iferrant
+* Lydia Duncan
+* Paul Sathre
+* Nelson Dias
+* Wu Feng (Virginia Tech)
+* Oliver Alvarado Rodriguez
+
 ### Agenda
-David Wonnacott will give a 20-minute presentation on "Tools for Teaching Intro CS / Programming".
-- while not Chapel-specific, David will cover the tools he currently uses to teach CS1/CS2, and possible ways
-  to "Chapel-ize" them
-- Luca Ferranti will talk briefly on his work to add Chapel to https://exercism.org
-- other discussion points, time permitting (we could discuss parallel I/O in teaching, the current state of
-  linear algebra in Chapel, I could show my recent implementation of a 2D advection solver to generate an
-  ensemble of solutions to train a generative AI model in an upcoming course)
+
+David Wonnacott gave a 20-minute presentation on "Tools for Teaching Intro CS / Programming" ([PDF slides](https://github.com/chapel-lang/ChapelExamplesAndTeachingMaterials/blob/main/Slides/David-Wonnacott-toolsForTeachingComputation.pdf.pdf))
+- not Chapel-specific; covering the tools he currently uses to teach CS1/CS2, and possible ways to
+  "Chapel-ize" them
+- focusing on tools like PythonTutor (currently does not support Chapel) and N-Dolphin (notional-machine
+  visualizer: this is the code, this is the state, for pure functional programming, could be adapted to
+  support Chapel)
+- need something that automatically draws diagrams to illustrate execution semantics
+- Chapel notebooks would be great!
+- Luca pointed out https://marimo.io which stores Python notebooks as native Python code, and tracks variable
+  dependencies
+
+Luca Ferranti talked briefly on his work to add Chapel to https://exercism.org as a followup to the [original
+ChapelCon'24 presentation](https://chapel-lang.org/ChapelCon24.html#ferranti).
+- Exercism is an open-source website to teach programming languages, currently supporting ~70 languages
+- makes learning a collaborative community experience: programmers can volunteer as mentors and give feedback
+  to people solving exercises; can submit new exercises
+- currently stuck at profiling and benchmarking, before the Chapel track can be published
+
 ### Key discussion points
+
+Nelson: how can we present Chapel to the general audience? Currently all materials and courses emphasize
+parallel features, but Chapel is quite nice even without parallelism. Maybe some effort should go into making
+it more popular in general. Someone needs to write a book, perhaps create a website.
+
+Luca: yes, beginners (first-year students) face many challenges with Chapel, starting from not knowing how to
+open a terminal, let alone install Chapel.
+
+<!-- with paul S looking at research aspects of Chapel -->
+
+Wu: funding agencies are pulling away from Chapel as it does not take over MPI for parallel
+programming. Students/researchers tend to gravitate towards MPI + X since they were exposed to it in
+school. It would be nice to push Chapel with less parallelism into undergraduate programs -- this would have a
+huge benefit later on in their careers.
+
+Paul: we need to position Chapel as the first language (taught to undergrads). Having easier installers would
+reduce the friction. Also improving compile time would help. In general, addressing any friction points and
+speeding up compiling and execution would reduce barriers for entry.
+
+arezaii: We did start releasing precompiled binary packages for most distributions, to facilitate the
+installation process.
+
+Lydia: the development team continues to work on compilation speeds
+
+Engin: an immediate goal is to use the new compiler frontend into the production
+
+Lydia: there is some internal discussion about interactive shells
+
+arezail: work on Dyno (the internal word for compiler rework) continues, could bring it to an interactive
+shell at some point; working on an incremental compiler is further down the line, there are definitely
+barriers
+
+arezaii: this template repository https://github.com/chapel-lang/chapel-hello-world will allow the use of
+Chapel through GitHub code spaces, which can be connected to via VSCode directly.
+
+Lydia: this accompanying video https://youtu.be/PrB9O_CGV28 shows how to use Chapel through GitHub code
+spaces.
+
+<!-- Luca: I wrote an interactive REPL for Chapel ~1 year ago, it was reading hte input, writing the output to a file and printing the diff every time. It was the dumbest code to ever run... but it did run! -->
+
+
+
+
+
 ### Next month
-Wishlist of future topics for these meetups.
+
+We could do a Q&A session on various topics. Alex could talk about some of the topics we did not have time to cover today.
+
+
+
+
+
+
+
+
+
 
 
 
