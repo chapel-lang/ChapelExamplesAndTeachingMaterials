@@ -23,7 +23,7 @@
 
 ### Agenda
 
-David Wonnacott gave a 20-minute presentation on "Tools for Teaching Intro CS / Programming" ([PDF slides](https://github.com/chapel-lang/ChapelExamplesAndTeachingMaterials/blob/main/Slides/David-Wonnacott-toolsForTeachingComputation.pdf.pdf))
+David Wonnacott gave a 20-minute presentation on "Tools for Teaching Intro CS / Programming" ([PDF slides](https://github.com/chapel-lang/ChapelExamplesAndTeachingMaterials/blob/main/Slides/David-Wonnacott-toolsForTeachingComputation.pdf))
 - not Chapel-specific; covering the tools he currently uses to teach CS1/CS2, and possible ways to
   "Chapel-ize" them
 - focusing on tools like PythonTutor (currently does not support Chapel) and N-Dolphin (notional-machine
