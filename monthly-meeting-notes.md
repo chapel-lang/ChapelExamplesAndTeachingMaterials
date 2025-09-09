@@ -5,6 +5,28 @@
 <!-- ### Next month -->
 <!-- Wishlist of future topics for these meetups. -->
 
+# Wednesday September 10, 2025
+
+### Attendees
+
+### Agenda
+
+We don't have volunteer speakers so suggesting the following two parts:
+
+1. Alex will discuss a couple of side training projects that use Chapel. These sessions are not focused on teaching Chapel itself, but rather on providing an opportunity to introduce the audience -- academic researchers from diverse fields and our HPC users -- to Chapel while covering other topics.
+
+1.1 Developing a 4-hour ML course where the goal is to train a generative AI model on an ensemble of solutions from a 2D advection solver, and then use the model to predict solutions based on initial conditions. I am using a Chapel code to generate a large ensemble of solutions for model training.
+
+1.2 Developing a short course on GPU efficiency for our HPC cluster, which uses NVIDIA H100 cards. These GPUs can be challenging to utilize effectively: most off-the-shelf software packages achieve well below 75% utilization. I plan to use a simple Chapel code to demonstrate profiling steps. The challenge is that my current code is too efficient, maintaining 100% GPU usage. I've manually degraded its efficiency for demonstration purposes, but I'd prefer to start with an less efficient version and then optimize it.
+
+2. Other discussion points, time permitting, e.g. showing parallel I/O in teaching, the current state of linear algebra in Chapel, and anything else you would like to bring up.
+
+### Key discussion points
+
+### Next month
+
+Wishlist of future topics for these meetups.
+
 # Wednesday August 13, 2025
 
 ### Attendees
