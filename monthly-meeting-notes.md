@@ -9,21 +9,80 @@
 
 ### Attendees
 
+* Engin Kayraklioglu
+* Michelle Strout
+* Nelson Dias
+* Paul Sathre
+* Daniel Fedorin
+* Alex Razoumov
+
 ### Agenda
 
 We don't have volunteer speakers so suggesting the following two parts:
 
-1. Alex will discuss a [couple of side training projects that use Chapel](http://folio.vastcloud.org/meetup20250910.html). These sessions are not focused on teaching Chapel itself, but rather on providing an opportunity to introduce the audience -- academic researchers from diverse fields and our HPC users -- to Chapel while covering other topics.
-    (a) Developing a 4-hour ML course where the goal is to train a generative AI model on an ensemble of solutions from a 2D advection solver, and then use the model to predict solutions based on initial conditions. I am using a Chapel code to generate a large ensemble of solutions for model training.
-    (b) Developing a short course on GPU efficiency for our HPC cluster, which uses NVIDIA H100 cards. These GPUs can be challenging to utilize effectively: most off-the-shelf software packages achieve well below 75% utilization. I plan to use a simple Chapel code to demonstrate profiling steps. The challenge is that my current code is too efficient, maintaining 100% GPU usage. I've manually degraded its efficiency for demonstration purposes, but I'd prefer to start with a less efficient version and then optimize it.
+1. Alex showed a [couple of side training projects that use
+   Chapel](http://folio.vastcloud.org/meetup20250910.html). These sessions are not focused on teaching Chapel
+   itself, but rather on providing an opportunity to introduce the audience -- academic researchers from
+   diverse fields and our HPC users -- to Chapel while covering other topics.
 
-2. Other discussion points, time permitting, e.g. showing parallel I/O in teaching, the current state of linear algebra in Chapel, and anything else you would like to bring up.
+(1) Developing a 4-hour ML course where the goal is to train a generative AI model on an ensemble of solutions
+from a 2D advection solver, and then use the model to predict solutions based on initial conditions. I am
+using a Chapel code to generate a large ensemble of solutions for model training.
+
+Nelson: the wave solver run time does not scale linearly with the number of cores. It would be great to have a
+few examples online to explain why that happens.
+
+(2) Developing a short course on GPU efficiency for our HPC cluster, which uses NVIDIA H100 cards. These GPUs
+can be challenging to utilize effectively: most off-the-shelf software packages achieve well below 75%
+utilization. I plan to use a simple Chapel code to demonstrate profiling steps. The challenge is that my
+current code is too efficient, maintaining 100% GPU usage. I've manually degraded its efficiency for
+demonstration purposes, but I'd prefer to start with a less efficient version and then optimize it.
+
+Engin: the NVIDIA NSight kernel-by-kernel profiler works for Chapel GPU code, but need a special flag to
+enable debug symbols and backend optimizations: `--gpu-ptxas-enforce-optimization`. Also the part from our
+technote about debugging + profiling with NVIDIA NSight
+https://chapel-lang.org/docs/main/technotes/gpu.html#debugger-and-profiler-support-for-nvidia
+
+Engin: can pass a range to the "prime" function, no need for an explicit loop in the main body => better
+scheduling on the GPU
+
+2. Other discussion points, time permitting, e.g. showing parallel I/O in teaching, the current state of
+   linear algebra in Chapel, and anything else you would like to bring up -- we did not get to these.
 
 ### Key discussion points
 
+Discussion on how to better advertise Chapel.
+
+Engin: our top priority is to grow the community, but would special tutorial sessions for the HPC staff help
+(in the context of 200 tech staff under the Digital Research Alliance of Canada mostly dismissing Chapel as
+being unpopular with users) -- Engin will follow up with Alex
+
+Paul asked for the [link to our EasyBuild recipes for Chapel](https://github.com/ComputeCanada/easybuild-easyconfigs.git)
+- anything to reduce the perceived burden for the IT/HPC system maintainers to have it installed systemwide,
+  and one less barrier for domain science users
+- any existing Spack packages for Chapel?
+- also simple Apptainer containers
+
+Michelle: maybe, we should push back on technical talks. The group has been doing this for a while, without
+much uptake. Maybe instead we should demo how researchers could use Arkouda to scale things from Python,
+i.e. focus on people's needs, as opposed to forcing them to learn Chapel which is a harder sell. Focus on
+"here is how you can scale your existing workflow" using high-level libraries like Arkouda.
+
+Nelson: people start learning programming with very simple things, and only later -- once they get used to the
+tool -- they step into compute-intensive and parallel topics. Possibly, we could show people that very simple,
+non-HPC things can be done easily in Chapel, e.g. associative arrays. Chapel is very easy to learn, and we
+should devote time to teaching simple things in Chapel, so that poeoople are drawn to the language for simple
+needs. Only later they will use for compute-intensive problems.
+
+Engin: Re potential false-sharing behavior difference, I don't have a good idea, but just speculating, Chapel
+arrays are default-initialized. Moreover, that initialization is done in parallel. Say, you have array of
+ints, we'll 0-initialize that memory where each core will initialize its part. That will make better affinity
+and your array will be spread across many pages reducing cache conflicts across cores potentially?
+
 ### Next month
 
-Wishlist of future topics for these meetups.
+Our October meeting date falls on ChapelCon'25, and in November coincides with SC, so we might need to
+reschedule rather than cancel both.
 
 # Wednesday August 13, 2025
 
