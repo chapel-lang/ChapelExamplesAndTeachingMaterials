@@ -71,8 +71,8 @@ i.e. focus on people's needs, as opposed to forcing them to learn Chapel which i
 Nelson: people start learning programming with very simple things, and only later -- once they get used to the
 tool -- they step into compute-intensive and parallel topics. Possibly, we could show people that very simple,
 non-HPC things can be done easily in Chapel, e.g. associative arrays. Chapel is very easy to learn, and we
-should devote time to teaching simple things in Chapel, so that poeoople are drawn to the language for simple
-needs. Only later they will use for compute-intensive problems.
+should devote time to teaching simple things in Chapel, so that people are drawn to the language for simple
+needs. Only later will they use it for compute-intensive problems.
 
 Engin: Re potential false-sharing behavior difference, I don't have a good idea, but just speculating, Chapel
 arrays are default-initialized. Moreover, that initialization is done in parallel. Say, you have array of
