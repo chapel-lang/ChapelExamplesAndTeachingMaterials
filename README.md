@@ -35,3 +35,7 @@ Here is an initial list of existing Chapel materials that people have developed.
 | | [https://ja.wikibooks.org/wiki/Chapel](https://ja.wikibooks.org/wiki/Chapel) | community effort, in Japanese, unknown author    |          | |
 | | [http://kyleburke.info/?main=resources](http://kyleburke.info/?main=resources), [http://kyleburke.info/?resource=chapelTutorial](http://kyleburke.info/?resource=chapelTutorial) | Kyle Burke          |                          | [http://kyleburke.info/](http://kyleburke.info/)                 |
 | GPU computing with Chapel | [https://folio.vastcloud.org/chapel-gpu](https://folio.vastcloud.org/chapel-gpu) | Alex Razoumov | Simon Fraser University | |
+
+Here are examples of research papers that use Chapel code:
+- STAEBLE Lake Evaporation Model by N. L. Dias, L. E. B. Hoeltgebaum, and I. Santos:
+  [paper](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022WR033012) and [code](https://github.com/nldias/staeble-wrr)
