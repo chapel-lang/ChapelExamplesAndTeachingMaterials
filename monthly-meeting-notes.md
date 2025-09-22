@@ -5,6 +5,10 @@
 <!-- ### Next month -->
 <!-- Wishlist of future topics for these meetups. -->
 
+# Wednesday October 08, 2025
+
+Cancelled due to ChapelCon this week. Next meeting on Nov-12.
+
 # Wednesday September 10, 2025
 
 ### Attendees
