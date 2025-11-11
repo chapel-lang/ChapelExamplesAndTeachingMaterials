@@ -5,6 +5,57 @@
 <!-- ### Next month -->
 <!-- Wishlist of future topics for these meetups. -->
 
+# Wednesday November 12, 2025
+
+### Attendees
+
+* 
+
+### Agenda
+
+I suggest we use the time to discuss the future of the [HPC Carpentry
+Chapel](https://www.hpc-carpentry.org/hpc-chapel) lessons. We updated them last year, primarily to move to a
+new template and refresh the examples for Chapel 2.x. However, the lessons still follow a rather rigid
+structure centred on traditional parallel programming for physicists and engineers, i.e. researchers running
+large numerical simulations.
+
+For context, these lessons were originally designed as part of a two-day workshop: on Day 1, participants
+learn about HPC fundamentals -- including schedulers, filesystems, software environments, parallel paradigms,
+and best practices -- while on Day 2, the instructor selects a language from
+https://www.hpc-carpentry.org/community-lessons for the hands-on programming part.
+
+There was a suggestion to split the main Chapel track into three parts:
+
+1.	A heat solver for engineers and physicists (the current official lessons)
+2.	A Julia set example for participants not interested in solving PDEs (which I currently teach)
+3.	A third example focusing on task synchronization, with bioinformatics mentioned as a possible theme
+
+Other suggestions:
+
+- Add GPU content and align the numerical example with the rest of the lessons; e.g. I use prime numbers to
+  teach GPU programming in Chapel which is not ideal
+- Include more introductory, non-HPC material to help promote the language to a broader audience
+- Expand the coverage of I/O, including support for different data types and parallel I/O
+- Add linear algebra solvers
+
+Couple of limitations to keep in mind:
+
+- These lessons are still part of HPC Carpentry, so they should ideally maintain an HPC focus.
+- All lesson updates require reviewer approval. Although I am a maintainer, I can't freely make changes --
+  each pull request must be approved by at least one other reviewer before it can be merged. Because of this,
+  I maintain my own set of lesson notes ([Parallel programming in Chapel](https://folio.vastcloud.org/chapel)
+  and [GPU computing with Chapel](https://folio.vastcloud.org/chapel-gpu)), which have now diverged
+  significantly from the official HPC Carpentry version.
+
+Please feel free to bring any other suggestions for this discussion.
+
+
+
+
+
+
+
+
 # Wednesday October 08, 2025
 
 Cancelled due to ChapelCon this week. Next meeting on Nov-12.
