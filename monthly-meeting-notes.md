@@ -72,6 +72,8 @@ these to HPC Carpentry Chapel lessons. (action item below)
 
 Nelson: concrete examples of problems or codes would be very helpful!
 
+Michelle: https://chapel-lang.org/examples
+
 Paul: he or Wu Feng might have been the ones who suggested the bioinfo lesson. Talked to his students but did
 not get any bites: none wanted to write it in Chapel. Unfortunately, Chapel-related projects are all personal
 time, so can't commit a lot of time to this.
