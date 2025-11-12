@@ -9,15 +9,17 @@
 
 ### Attendees
 
-* 
+* Nelson Dias
+* Michelle Strout
+* Paul Sathre
+* Alex Razoumov
 
 ### Agenda
 
-I suggest we use the time to discuss the future of the [HPC Carpentry
-Chapel](https://www.hpc-carpentry.org/hpc-chapel) lessons. We updated them last year, primarily to move to a
-new template and refresh the examples for Chapel 2.x. However, the lessons still follow a rather rigid
-structure centred on traditional parallel programming for physicists and engineers, i.e. researchers running
-large numerical simulations.
+We discussed the future of the [HPC Carpentry Chapel](https://www.hpc-carpentry.org/hpc-chapel) lessons. We
+updated them last year, primarily to move to a new template and refresh the examples for Chapel 2.x. However,
+the lessons still follow a rather rigid structure centred on traditional parallel programming for physicists
+and engineers, i.e. researchers running large numerical simulations.
 
 For context, these lessons were originally designed as part of a two-day workshop: on Day 1, participants
 learn about HPC fundamentals -- including schedulers, filesystems, software environments, parallel paradigms,
@@ -47,7 +49,57 @@ Couple of limitations to keep in mind:
   and [GPU computing with Chapel](https://folio.vastcloud.org/chapel-gpu)), which have now diverged
   significantly from the official HPC Carpentry version.
 
-Please feel free to bring any other suggestions for this discussion.
+### Minutes
+
+Nelson: the suggestion list is very good, meets my own interests; perhaps, there is value in linking the
+Carpentry programming examples from the main Chapel language website (Michelle will share this with the Chapel
+team). One addition could be serializers and de-serializers which are difficult to follow in the official
+Chapel site and docs, so it'd be great to have working examples. Last week was trying to read an HDF4 file
+from NASA -- would be great to learn how to read HDF4 in addition to HDF5.
+
+Michelle: wondering if there is a way to crowdsource these Carpentry additions on Chapel Discord. This would
+give new users a reason to get excited and contribute. Some time ago Michelle did a blog post with Lydia on
+parameter optimization in Chapel https://chapel-lang.org/blog/posts/hpo-example : took a Python code, added
+config variables, and then implemented the same problem in a distributed way in Chapel. Another example:
+working with the Oak Ridge folks, they had trouble converting files from one format to another. Someone on the
+Chapel team wrote a chapel program and scaled it out, now they are able to do their experiments. There are
+real practical things that Python people have problems scaling out, so perhaps we could create an HPC
+carpentry lesson from existing examples to capture people's attention. Michelle would be happy to post on
+Discord about this. The Chapel team is active on several social platforms and GitHub, could have a call on
+these. Maybe the easiest way forward would be to create a markdown file: here are some examples in Chapel,
+here are some unsolved numerical problems, here are some Python codes to scale out, and we would like to add
+these to HPC Carpentry Chapel lessons. (action item below)
+
+Nelson: concrete examples of problems or codes would be very helpful!
+
+Paul: he or Wu Feng might have been the ones who suggested the bioinfo lesson. Talked to his students but did
+not get any bites: none wanted to write it in Chapel. Unfortunately, Chapel-related projects are all personal
+time, so can't commit a lot of time to this.
+
+Michelle: how much are HPC Carpentry and in particular Chapel lessons are being used for teaching? Are there
+any stats? (action item below)
+
+Paul: OpenDwarfs project https://github.com/vtsynergy/OpenDwarfs provides a benchmark suite of different
+computational problems (13 HPC dwarfs) -- could be a great opportunity to port these to Chapel! Paul might
+start looking into one of those.
+
+Michelle: typically in classes people are strongly discouraged from using AI code generators, as the goal is
+to learn coding, but this could be a good oppotunity to use AI to see how far you could go with Chapel on
+these examples.
+
+### Action items
+
+1. Alex will email the HPC carpentry steering committee, ask about the training stats, cc Michelle.
+2. Alex will start a markdown document with examples in this repository.
+
+### Next meeting
+
+For December, Michelle will ask one of the people on the Chapel team to present on the code they wrote for Oak
+Ridge. Michelle will get back to Alex.
+
+
+
+
 
 
 
