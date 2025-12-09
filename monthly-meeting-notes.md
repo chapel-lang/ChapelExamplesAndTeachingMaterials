@@ -5,7 +5,7 @@
 <!-- ### Next month -->
 <!-- Wishlist of future topics for these meetups. -->
 
-# Wednesday December 20, 2025
+# Wednesday December 10, 2025
 
 ### Attendees
 
