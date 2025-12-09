@@ -5,6 +5,26 @@
 <!-- ### Next month -->
 <!-- Wishlist of future topics for these meetups. -->
 
+# Wednesday December 20, 2025
+
+### Attendees
+
+*
+
+### Agenda
+
+Shreyas Khandekar will present on [fastotf2](https://github.com/hpc-ai-adv-dev/fastotf2), a Chapel
+implementation of a subset of the Open Trace Format 2 (OTF2) library which is a standardized trace format used
+by tools such as [Score-P](https://www.vi-hps.org/projects/score-p) for profiling and event tracing of HPC
+applications. The focus will be on a tool for converting OTF2 traces to CSV for telemetry analysis. By
+leveraging Chapel's parallelism and C interoperability, it replaces the Python workflows to speed up trace
+processing.
+
+
+
+
+
+
 # Wednesday November 12, 2025
 
 ### Attendees
