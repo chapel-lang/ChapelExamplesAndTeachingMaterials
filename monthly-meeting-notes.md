@@ -9,7 +9,9 @@
 
 ### Attendees
 
-*
+* Shreyas Khandekar
+* Alex Razoumov
+* 
 
 ### Agenda
 
@@ -20,6 +22,13 @@ applications. The focus will be on a tool for converting OTF2 traces to CSV for 
 leveraging Chapel's parallelism and C interoperability, it replaces the Python workflows to speed up trace
 processing.
 
+### Next meetup chair
+
+Alex has agreed to chair these meetups for six months, from July to December. The proposal is to make this a
+rotating role on a six-month basis. Not only will this bring fresh perspectives to our meetups, but it will
+also give other community members the opportunity to help shape these conversations.
+
+If everyone agrees in principle, we'll should select a new chair for January-June.
 
 
 
